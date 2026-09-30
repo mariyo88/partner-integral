@@ -158,27 +158,36 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar {
-        flex-wrap: nowrap;
+    /* Match Industro layout: single-line brand + toggler on the right */
+    .navbar .navbar-brand {
+        flex: 0 1 auto;
+        max-width: calc(100% - 4.5rem);
+        padding-left: 1.25rem !important;
+        padding-right: 2.75rem;
+        margin-right: 0 !important;
     }
 
-    .navbar .navbar-brand {
-        padding-left: 1.25rem !important;
-        padding-right: 35px;
-        max-width: calc(100% - 56px);
-        min-width: 0;
+    .navbar .navbar-brand::after {
+        width: 50px;
+        right: -25px;
     }
 
     .navbar .navbar-brand h1 {
-        font-size: 1.15rem;
+        font-size: clamp(1.35rem, 4vw, 1.25rem);
         line-height: 1.2;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .navbar .navbar-toggler {
         flex-shrink: 0;
+        position: relative;
+        z-index: 2;
+        margin-left: auto;
+    }
+
+    .navbar .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
     }
 
     .navbar .navbar-nav .nav-link  {
