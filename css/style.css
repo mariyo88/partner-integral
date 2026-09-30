@@ -158,6 +158,29 @@ h6,
 }
 
 @media (max-width: 991.98px) {
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    .navbar .navbar-brand {
+        padding-left: 1.25rem !important;
+        padding-right: 35px;
+        max-width: calc(100% - 56px);
+        min-width: 0;
+    }
+
+    .navbar .navbar-brand h1 {
+        font-size: 1.15rem;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .navbar .navbar-toggler {
+        flex-shrink: 0;
+    }
+
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
