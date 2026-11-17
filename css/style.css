@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF5E14;
+    --primary: #2E9B4F;
     --secondary: #5F656F;
     --light: #F5F5F5;
-    --dark: #02245B;
+    --dark: #1A2A24;
 }
 
 .back-to-top {
@@ -196,7 +196,7 @@ h6,
     }
 
     .navbar .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+        border-top: none;
     }
 }
 
@@ -228,7 +228,7 @@ h6,
     bottom: 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%);
+    background: linear-gradient(to right, rgba(26, 42, 36, 1) 0%, rgba(26, 42, 36, 0) 100%);
     z-index: 1;
 }
 
@@ -261,7 +261,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
+    background: linear-gradient(to right, rgba(26, 42, 36, 1) 0%, rgba(26, 42, 36, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -454,7 +454,7 @@ h6,
     display: flex;
     align-items: center;
     text-align: center;
-    background: rgba(2, 36, 91, .7);
+    background: rgba(26, 42, 36, .7);
     transition: .5s;
 }
 
