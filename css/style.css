@@ -196,7 +196,7 @@ h6,
     }
 
     .navbar .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+        border-top: none;
     }
 }
 
